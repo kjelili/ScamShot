@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scamguard
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: scamguard
+  template:
+    metadata:
+      labels:
+        app: scamguard
+    spec:
+      containers:
+      - name: app
+        image: scamguard:latest
+        ports:
+        - containerPort: 8501
+        envFrom:
+        - secretRef:
+            name: scamguard-secrets
