@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+[user]
+	name = kjelili
+	email = kjelili@gmail.com
+[remote "origin"]
+	url = https://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@github.com/kjelili/ScamShot
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[gui]
+	wmstate = normal
+	geometry = 1109x563+160+160 216 255
